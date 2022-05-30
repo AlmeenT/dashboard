@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {FiSettings} from 'react-icons/fi'
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import './App.css'
-import { Client, Team, Calendar, ColorPicker, Editor, Financial, Orders, Product } from './Pages'
+import { Dashboard, Client, Team, Calendar, ColorPicker, Editor, Financial, Orders, Product } from './Pages'
 import {Button, Footer, Header, Navbar, Sidebar, Notification, ThemeSetting, UserProfile, LineChart, Pie, Stacked, SparkLine} from './Components'
 
 const app = () => {
@@ -35,10 +35,15 @@ const app = () => {
                 </div>
                 <div>
                   <Routes>
-                        <Route path='/' element='Dashboard' />
-                        <Route path='/team' element='Team Members' />
-                        <Route path='/clients' element='Clients' />
-                        <Route path='/products' element='Products' /> 
+                        <Route path='/' element={ <Dashboard />} />
+                        <Route path='/team' element={<Team />} />
+                        <Route path='/clients' element={<Client />} />                 
+                        <Route path='/products' element={<Product />   } />                     
+                        <Route path='/color' element={<ColorPicker/> } />
+                        <Route path='/calendar' element={<Calendar />} />                  
+                        <Route path='/order' element={<Orders /> } />                 
+                        <Route path='/editor' element={<Editor /> } />                 
+                        <Route path='/financial' element={<Financial />} />                  
                   </Routes>
                 </div>
             </div>           

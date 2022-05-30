@@ -6,3 +6,4 @@ export {default as Financial} from "./Financial";
 export {default as Orders} from "./Orders";
 export {default as Product} from "./Product"
 export {default as Team} from "./Team"
+export {default as Dashboard} from "./Dashboard"
