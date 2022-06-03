@@ -6,6 +6,7 @@ export {default as Notification} from "./Notification"
 export {default as Sidebar} from "./Sidebar"
 export {default as ThemeSetting} from "./ThemeSettings"
 export {default as UserProfile} from "./UserProfile"
+export {default as Chat} from "./Chat"
 
 export {default as LineCharts} from "./Charts/LineChart"
 export {default as SparkLine} from "./Charts/SparkLine"
